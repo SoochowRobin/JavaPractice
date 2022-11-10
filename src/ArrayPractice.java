@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayPractice {
     /*
     This file is used to practice Java Array
@@ -23,6 +25,21 @@ public class ArrayPractice {
         for (String car: cars) {
             System.out.print(car+" ");
         }
+
+
+        // I will use Arrays class and sort() static method to sort the array
+        int[] integers = new int[]{100, 20, -10, -100, 110, 40};
+        System.out.println("Before sorting :");
+        for(int num: integers){
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        Arrays.sort(integers); // use static method
+        System.out.println("After sorting :");
+        for(int num: integers){
+            System.out.print(num + " ");
+        }
+
     }
 
 }
