@@ -12,6 +12,10 @@ public class FlexibleArgs {
 
     private static void m(int... args){
         System.out.println("flexible method execute!");
+
+        for (Integer arg: args) {
+            System.out.println(arg);
+        }
     }
 
 }
